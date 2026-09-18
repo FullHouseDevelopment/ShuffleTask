@@ -7,7 +7,7 @@ if [[ -z "${NUGET_AUTH_TOKEN:-}" ]]; then
 fi
 
 source_name="github"
-source_url="https://nuget.pkg.github.com/yaron-E92/index.json"
+source_url="https://nuget.pkg.github.com/FullHouseDevelopment/index.json"
 
 if dotnet nuget list source | grep -Fq "${source_name}"; then
   dotnet nuget update source "${source_name}" \
